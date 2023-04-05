@@ -1,0 +1,10 @@
+var lagi;
+do{
+    nama = prompt("masukan nama :");
+    alert("hallo "+ nama +"!");
+    lagi = confirm("lagi ?");
+}while(lagi === true);
+
+
+
+//penjelasan : kodingan di atas dalah logika sederhana untuk memunculkan pupup Box yang dimana alert akan terus muncul ketia user terus menekan Ok.
