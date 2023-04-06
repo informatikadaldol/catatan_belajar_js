@@ -1,0 +1,11 @@
+var x;
+var jml = 10;
+for(x = 1; x<=jml; x++){
+    if(x<=6 && x !== 5){
+        console.log("Ankot No."+x+" Beroprasi Dengan Baik");
+    }else if( x === 8 || x === 10 || x === 5){
+        console.log("Angkot No."+x+ " Sedang Lembur");
+    }else{
+        console.log("Angkot No."+x+" sedang tidak beroprasi")
+    }
+}
