@@ -1,0 +1,12 @@
+function hitungJumlahDuaKubus(a,b){
+    var a;
+    var b;
+    var hasil;
+    a = a * a * a;
+    b = b * b * b;
+    hasil = a + b;
+    return hasil;
+}
+var a = parseInt(prompt("masukan nilai kubus 1 :"));
+var b = parseInt(prompt("masukan nilai kubus 2 :"));
+alert(hitungJumlahDuaKubus(a,b));
