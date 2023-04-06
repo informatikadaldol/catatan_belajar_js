@@ -1,30 +1,35 @@
-//menentukan pilihan player
-var p = prompt("pilih : ,gajah, semut, orang");
-//membangkitkan bilangan random
-var comp = Math.random();
+var ulang;
+do{
+        //menentukan pilihan player
+    var p = prompt("masukan pilihan antara :\n gajah, semut, orang");
 
-if( comp < 0.34 ) {
-    comp = "gajah";
-}else if( comp >= 0.34 && comp <= 0.67 ){
-    comp = "orang"
-}else{
-    comp = "semut"
-}
+    //membangkitkan bilangan random
+    var comp = Math.random();
+    if( comp < 0.34 ){
+        comp = "gajah";
+    }else if( comp >= 0.34 && comp <= 0.67 ){
+        comp = "orang";
+    }else{
+        comp = "semut";
+    }
 
-//menentukan rules
-var hasil;
-if( p == comp ){
-    hasil = "seri";
-}else if(p == "gajah"){
-    hasil = ( comp == "orang" ) ?  "menang" : "kalah";
-}else if( p == "orang"){
-    hasil = ( comp == "gajah" ) ? "kalah" : "menang";
-}else if( p == "semut"){
-    hasil = ( comp == "orang") ? "kalah"   : "menang";
-}else{
-    hasil = "anda memasukan pilihan yang salah!";
-}
+    // menentukan rules
+    var hasil;
+    if ( p == comp ){
+        hasil = "seri";
+    }else if( p == "gajah"){
+        hasil = ( comp == "orang" ) ? "menag" : "kalah";
+    }else if( p == "orang"){
+        hasil = ( comp == "gajah" ) ? "kalah" : "menang";
+    }else if( p == "semut" ){
+        hasil = ( comp == "orang" ) ? "kalah" : "menang";
+    }else{
+        hasil = "pilihan yang anda masukan salah";
+    }
 
+    //menampilkan hasil 
+    alert("anda ="+p+" dam komputer ="+comp+"\n maka hasilnya "+hasil  );
 
-//menampilkan hasilnya
-alert("kamu memilih : "+p+" dan komputer memilih :"+comp+"\n maka hasilnya : "+hasil);
+    //ulang ayau tidak
+    ulang = prompt ("mau di ulang gak ?");
+}while(ulang == "y" || ulang  == 1);
