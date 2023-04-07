@@ -1,0 +1,53 @@
+myarr = ['irsan',90,true,"udin",false];
+
+//mcam macam method pada array javascript
+
+//1.length  = untuk mengetahui jumlah index yang dimiliki array
+console.log("jumlah index pada myarr :"+ myarr.length); 
+
+//2. join  = untuk mneggabungkan semua elemen yang berada pada array dan menjadikannya menjadi string agar mudah di baca usser
+console.log(myarr.join("-"));
+
+
+//3. push = untuk mmenambahkan array di index terakhir
+myarr.push("irsanwoy");
+console.log(myarr);
+
+//4 pop = untuk menghapus elemen terakhir array
+myarr.pop();
+console.log(myarr);
+
+
+//5. unshif = menambahkan index di awal array
+myarr.unshift("Muhammad Irsan");
+console.log(myarr);
+
+
+//6 shift = untuk menghapus awal elemen dari array
+myarr.shift();
+console.log(myarr);
+
+
+//7. splice untuk menambah dan menghapus dimanapun yang kita inginkan
+//intruksi : splice(indexAwal, mauDihapusBerapa, elemmenBaru)
+myarr.splice(1,1,"semangka");
+console.log(myarr);
+
+//8. forEach = untuk menggantikan pengulangan agar lebih mudah
+myarr.forEach(function(e,i){
+    console.log("index ke- "+i+1+e);
+})
+
+//9. map = sama seperti forEach tapi dia mengembalikan index
+myarr.map(function(e,i){
+    console.log("index ke- "+i+1+e*2);
+})
+
+//10. sort untuk mnegurutkan angka pada array
+var angka = [2,3,5,1,2,5,10,87,32,1];
+console.log(angka);
+
+angka.sort(function(a,b){
+    return a-b;
+});
+console.log(angka);
